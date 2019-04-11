@@ -55,4 +55,4 @@ git config user.name "user 1"
 git config user.email "user@eamil"
 ```
 # Cloning
-When you got to clone a repo you will need to insert `work_user1`. Here is an example `git clone git@github.com-work_user1:work_user1/Learning-Vim.git` (notice the segment between - and : ).
+When you got to clone a repo make sure to use the ssh url.
