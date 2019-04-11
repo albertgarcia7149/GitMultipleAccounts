@@ -23,7 +23,7 @@ Host github.com-work_user1
    HostName github.com
    User git
    IdentityFile ~/.ssh/id_rsa_work_user1
-# Work account-1
+# Personal account
 Host github.com-personal_user1    
    HostName github.com
    User git
