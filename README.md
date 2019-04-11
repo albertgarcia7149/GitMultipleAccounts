@@ -15,7 +15,14 @@ Check to make sure they were created in `~/.ssh` with command `ls -la ~/.ssh`. I
 # Adding the key to Git account
 Go to the corresponding git website and sign in. Then look for where you can add an ssh key (most likely in settings). Copy the .pub for that corresponding key by using `cat ~/.ssh/id_rsa_work_user1.pub` and copying the output into the web browser. (note: for personal the command will be `cat ~/.ssh/id_rsa_personal_user1.pub`).
 
-#SSH Config File
+# Register new ssh keys with ssh-agent
+Make sure your ssh-agent is running with command `eval "$(ssh-agent -s)"`, then add keys to the ssh-agent with commands
+```
+ssh-add ~/.ssh/.ssh/id_rsa_work_user1
+ssh-add ~/.ssh/.ssh/id_rsa_personal_user1
+```
+
+# SSH Config File
 After adding both the keys open `~/.ssh/config` with your favorite text editor or create it if it doesn't exist. Configure the entries as shown below. Replace `work_user1` and `personal_user` with the git id for the respective account.
 ```
 # Work account,
